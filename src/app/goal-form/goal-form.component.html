@@ -1,11 +1,9 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Enter your github username..." [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
-        </div>
-      </form>
-    </div>
-  </div>
-  
+  <form class="row d-block form-inline mb-4 text-center active-cyan-3 active-cyan-4">
+      <i class="col-md-0 p-2 sm-hid fas fa-search text-white" aria-hidden="true"></i>
+      <input type="text" class="col-md-6 form-control form-control-sm  w-100" rows="4" placeholder="Enter a Username" name="searchTerm" [(ngModel)]="searchTerm">
+
+      <button type="submit" class="mg-sm col-md-2 btn btn-md btn-info" (click)="search()" name="button">SEARCH</button>
+  </form>
+
+</div>
