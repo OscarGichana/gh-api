@@ -20,6 +20,35 @@
         <div class="col-sm-6" style="float: left;">
             <h3><strong>GitHub UserName: {{user.name}}</strong></h3>
             <img class="rounded-circle" src="{{user.avatar_url}}">
+              <div class="card mt-4">
+                  <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}"><button>View Repo on Github</button></a>
+                  <p card-header>{{user.bio}}</p>
+                <br/>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                   <strong>Name: </strong>{{user.name}}
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Location: </strong>{{user.location}}
+                  </li>
+                  <li class="list-group-item">
+                    <strong>Email: </strong>{{user.email}}
+                  </li>
+                  <li class="list-group-item">
+                    <span class="label label-default"><strong>Public Repositories:  </strong> {{user.public_repos}} </span>
+                  <li class="list-group-item">
+                    <span class="label label-info"> <strong>Following:  </strong> {{user.following}} </span>
+                  <li class="list-group-item">
+                    <span class="label label-success"><strong>Followers:  </strong>: {{user.followers}} </span>
+                  <li class="list-group-item">
+                    <span class="label label-danger"><strong>Company:  </strong> {{user.company}}</span>
+                  <li class="list-group-item">
+                    <strong>Member Since: </strong>{{user.created_at}}
+                  </li>
+                </ul>
+              </div>
+        </div>
+
 
       </div>
 
