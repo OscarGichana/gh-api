@@ -1,5 +1,6 @@
 .jumbotron{
   background-color: aquamarine;
+  height: 200px;
 }
 
 .guru {
@@ -37,4 +38,43 @@ button {
 
 .circular--square {
   border-radius: 50%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  min-width: 100%;
+}
+.search-icon {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 14px;
+}
+.clear-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 10px;
+  cursor: pointer;
+  visibility: hidden; 
+}
+.search:hover, .search:focus {
+  border: 1.5px solid #009688;
+  background-color: white;
+}
+
+input {
+  background: none repeat scroll 0 0 #fafafa;
+  border: 1px solid #eeeeee;
+  color: #5e5e5e;
+  display: block;
+  font-family: arial, sans-serif;
+  font-size: inherit;
+  padding: 10px;
+  width: 80%;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  height: 50px;
 }
