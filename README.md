@@ -1,10 +1,23 @@
 # RestApi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
+This is a website that allows users access Github repos using Github username.
+
+## Author
+
+Oscar Nyameino Gichana. You can reach me through gichanaoscar3@gmail.com.
+
+## Description
+
+A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories.
+
+## Technologies used
+
+1.HTML 2.TYPESCRIPT 3.ANGULAR2 4.NODE
+
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Copy the link https://oscargichana.github.io/quotes/ in your browser and be inspired.
 
 ## Code scaffolding
 
