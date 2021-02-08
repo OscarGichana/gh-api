@@ -1,1 +1,16 @@
-<app-goal-form></app-goal-form>
+<div class="container">
+  <div class="jumbotron">
+    <h1>GITHUB REQUESTS</h1>
+    <div class="row justify-content-end">
+      <div class="col-md-12">
+        <form (ngSubmit)='searchUser()' #UserInputForm='ngForm'>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter github username" [(ngModel)]="username" name="username" style="text-align:center">
+            <button (click)="searchUser()">Click me!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+

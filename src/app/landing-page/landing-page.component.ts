@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from '../shared/user';
+import {Repo} from '../shared/repo';
+import {GithubService} from '../gh-http/gh-request.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,10 +10,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
+  user: any= [];
+  repos: any= [];
+  username: string;
 
-  constructor() { }
-
+  constructor(private githubService: GithubService) {
+  }
   ngOnInit() {
   }
-
 }
