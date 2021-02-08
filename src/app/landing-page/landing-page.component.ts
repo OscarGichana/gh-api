@@ -24,4 +24,14 @@ export class LandingPageComponent implements OnInit {
   }
   ngOnInit() {
   }
+   searchUser() {
+     this.githubService.getNewUser(this.username);
+     this.githubService.getUser().subscribe(user => {
+       this.user = user;
+     });
+     this.githubService.getRepos().subscribe(repos => {
+       this.repos = repos;
+     });
+
+   }
 }
