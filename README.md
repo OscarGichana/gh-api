@@ -17,7 +17,7 @@ A website where users may enter a GitHub username into a form, submit it, and se
 
 ## Development server
 
-Copy the link https://oscargichana.github.io/quotes/ in your browser and be inspired.
+Copy the link https://oscargichana.github.io/gh-api/ in your browser and be inspired.
 
 ## Code scaffolding
 

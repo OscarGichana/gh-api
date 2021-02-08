@@ -6,7 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { GoalFormComponent } from './goal-form/goal-form.component';
 
 
 import {GithubService} from './gh-http/gh-request.service';
@@ -17,7 +16,6 @@ import { HighlightDirective } from './highlight.directive';
   declarations: [
     AppComponent,
     LandingPageComponent,
-    GoalFormComponent,
     StrikethroughDirective,
     HighlightDirective,
   ],
