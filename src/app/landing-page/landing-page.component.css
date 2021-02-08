@@ -15,6 +15,10 @@
 
 }
 
+img {
+  border-radius: 50%;
+}
+
 button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -27,7 +31,10 @@ button {
   font-size: 16px;
 }
 
-img.rounded-corners {
-  border-radius: 30px;
+.container {
+  background-image: url("/src/assets/images/tee.jpg");
 }
 
+.circular--square {
+  border-radius: 50%;
+}

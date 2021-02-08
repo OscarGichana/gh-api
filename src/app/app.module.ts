@@ -10,12 +10,18 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
 
 
 import {GithubService} from './gh-http/gh-request.service';
+import { StrikethroughDirective } from './strikethrough.directive';
+import { HighlightDirective } from './highlight.directive';
+import { BackgroundimageComponent } from './backgroundimage/backgroundimage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    GoalFormComponent
+    GoalFormComponent,
+    StrikethroughDirective,
+    HighlightDirective,
+    BackgroundimageComponent
   ],
   imports: [
     BrowserModule,

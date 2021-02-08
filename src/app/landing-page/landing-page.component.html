@@ -21,7 +21,7 @@
             <h3><strong>GitHub UserName: {{user.name}}</strong></h3>
             <img class="rounded-circle" src="{{user.avatar_url}}">
               <div class="card mt-4">
-                  <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}"><button>View Repo on Github</button></a>
+                  <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}"><button appStrikethrough>View Repo on Github</button></a>
                   <p card-header>{{user.bio}}</p>
                 <br/>
                 <ul class="list-group">
@@ -56,9 +56,8 @@
             <hr>
             <div *ngFor="let repo of repos">
                 <div class="col-md-9 card-text">
-                  <h4>
-                    {{repo.name}}
-                  <a target="_blank" href="{{repo.html_url}}"><button style="float: right;">View Repo on Github</button>
+                  <h4 appHighlight>{{repo.name}}
+                  <a target="_blank" href="{{repo.html_url}}"><button style="float: right;" appStrikethrough>View Repo on Github</button>
                   </a>
                   </h4>
                   <p>{{repo.description}}</p>
