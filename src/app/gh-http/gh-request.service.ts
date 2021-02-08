@@ -15,4 +15,17 @@ export class GithubService {
     this.name =  'OscarGichana';
 
   }
+  getUser() {
+    return this._http.get('https://api.github.com/users/' + this.name)
+    .map(result => result);
+
+  }
+  getRepos() {
+    return this._http.get(' https://api.github.com/users/' + this.name + '/repos')
+    .map(result => result);
+  }
+
+  getNewUser(name: string) {    
+    this.name = name;
+  }
 }
